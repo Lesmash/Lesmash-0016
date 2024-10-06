@@ -1,0 +1,144 @@
+.calendar-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+    color: #ffffff;
+}
+
+.calendar-container h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.calendar-container h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 0.5rem;
+}
+
+.calendar-list, .create-calendar, .selected-calendar {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.track-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.track-item {
+    background-color: #2a2a2a;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.track-date {
+    font-size: 0.9rem;
+    color: #b5b5b5;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.calendar-header input {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.add-track-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.add-track-form input {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .calendar-container {
+        padding: 1rem;
+    }
+
+    .calendar-container h1 {
+        font-size: 2rem;
+    }
+
+    .calendar-container h2 {
+        font-size: 1.3rem;
+    }
+
+    input[type="text"], input[type="date"] {
+        width: 100%;
+    }
+
+    .calendar-header, .add-track-form {
+        flex-direction: column;
+    }
+
+    .calendar-header input, .add-track-form input {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.calendar-container > div {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

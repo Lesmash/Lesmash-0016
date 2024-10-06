@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-header {
+    background-color: #000000;
+    padding: 0.5rem 0;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav ul li a {
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 0.25rem;
+}
+
+.container .nav-link li {
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+.container ul li a {
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0.25rem;
+}
+
+.container .logout {
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.container .logout button {
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 0.25rem;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container .logout a {
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0.25rem;
+}
+
+.burger-icon {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 847px) {
+    .content h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .container .nav-link {
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        background-color: #000000;
+        width: 170px;
+        height: 60vh;
+        top: -7700px;
+        right: 0;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+        border-radius: 0.25rem;
+        z-index: 1000;
+    }
+
+
+    .nav-link.active {
+        top: 9%;
+        transition: all 0.3s ease-in;
+    }
+
+    .container .nav-link li a {
+        text-align: left;
+    }
+}

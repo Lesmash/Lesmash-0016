@@ -1,0 +1,114 @@
+.admin-panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .admin-panel h1 {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .admin-stats, .admin-console {
+    margin-top: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .admin-stats h2, .admin-console h2 {
+    color: #ff0000;
+    margin-bottom: 15px;
+  }
+  
+  .console-output {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    padding: 10px;
+    border-radius: 4px;
+    height: 200px;
+    overflow-y: auto;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  
+  .admin-console form {
+    display: flex;
+  }
+  
+  .admin-console input {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .admin-console button, .team-management button {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-console button:hover, .team-management button:hover {
+    background-color: #b30000;
+  }
+  
+  .admin-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .reset-season-button,
+  .update-users-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+
+  .reset-season-button {
+    background-color: #ff0800;
+  }
+  
+  .update-users-button {
+    background-color: #ff0000;
+  }
+  
+  .update-users-button:hover,
+  .reset-season-button:hover {
+    background-color: #b30000;
+  }
+  
+  .admin-console form, .team-management form {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .admin-console input, .team-management input, .team-management select {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    margin-right: 10px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .admin-actions {
+    margin-top: 20px;
+  }

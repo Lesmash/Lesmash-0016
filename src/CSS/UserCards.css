@@ -1,0 +1,54 @@
+.driver-cards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.driver-cards-container h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.driver-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.driver-card {
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.driver-card:hover {
+    transform: translateY(-5px);
+}
+
+.driver-card h2 {
+    color: #ff0000;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crown-icon {
+    color: gold;
+    margin-left: 10px;
+}
+
+.driver-card p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .driver-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

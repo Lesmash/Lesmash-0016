@@ -1,0 +1,137 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .standings {
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .standings h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+  }
+  
+  .standings-table th,
+  .standings-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+  }
+  
+  .standings-table th {
+    background-color: #333;
+    font-weight: bold;
+  }
+  
+  .standings-table tr:hover {
+    background-color: #222;
+    cursor: pointer;
+  }
+  
+  .current-user {
+    background-color: #1a1a1a;
+    font-weight: bold;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .dashboard-section {
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: calc(33.33% - 20px);
+    color: white;
+  }
+  
+  .dashboard-section h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .dashboard-section p {
+    margin: 5px 0;
+  }
+  
+  /* UserCard styles */
+  .user-card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .user-card {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .user-card h2 {
+    color: #ff0000;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .user-card p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .dashboard-section {
+        width: 100%;
+    }
+  
+    .standings-table th,
+    .standings-table td {
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+  }
