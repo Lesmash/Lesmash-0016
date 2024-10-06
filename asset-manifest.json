@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Lesmash/lesmash-0016/static/css/main.b1f3cb7f.css",
-    "main.js": "/Lesmash/lesmash-0016/static/js/main.51fcf78e.js",
-    "index.html": "/Lesmash/lesmash-0016/index.html",
-    "main.b1f3cb7f.css.map": "/Lesmash/lesmash-0016/static/css/main.b1f3cb7f.css.map",
-    "main.51fcf78e.js.map": "/Lesmash/lesmash-0016/static/js/main.51fcf78e.js.map"
+    "main.css": "/lesmash-0016/static/css/main.cbc41ee9.css",
+    "main.js": "/lesmash-0016/static/js/main.38edaab3.js",
+    "index.html": "/lesmash-0016/index.html",
+    "main.cbc41ee9.css.map": "/lesmash-0016/static/css/main.cbc41ee9.css.map",
+    "main.38edaab3.js.map": "/lesmash-0016/static/js/main.38edaab3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1f3cb7f.css",
-    "static/js/main.51fcf78e.js"
+    "static/css/main.cbc41ee9.css",
+    "static/js/main.38edaab3.js"
   ]
 }
